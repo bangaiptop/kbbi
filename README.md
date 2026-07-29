@@ -28,9 +28,23 @@ This Markdown-formatted KBBI dataset is designed primarily for:
 - **Reference** — developers and researchers can easily parse and query the dictionary programmatically.
 
 ## Structure
+The repository is organized as follows:
+```text
+KBBI/
+├── LICENSE
+├── README.md
+└── markdown/
+    ├── a.md
+    ├── abadi.md
+    ├── abah.md
+    ├── ...
+    ├── z.md
+    └── ...
+```
 
-KBBI/ ├── a.md ├── abadi.md ├── abah.md ├── ... ├── z.md └── README.md
-
+- **LICENSE**: License information for the dataset.
+- **README.md**: This file.
+- **markdown/**: Directory containing all KBBI entries in Markdown format, named after their headwords (e.g., a.md, abadi.md, etc.).
 
 Each file is named after the headword (lowercase) and contains the full dictionary entry in Markdown format.
 
@@ -75,7 +89,13 @@ This demonstrates how access to KBBI definitions enables LLMs to correctly disti
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/bangaiptop/KBBI.git
-   cd KBBI
+   git clone https://github.com/bangaiptop/kbbi.git
+   cd kbbi
+   ```
+2. **Instruction AI Asisten 'KBBI'**
+```bash
+Gunakan dokumen KBBI dalam Project sebagai sumber utama. Bedakan lema, homonim, kelas/label, arti, contoh, bentuk tidak baku, varian, turunan, gabungan kata, peribahasa, dan idiom. Jangan membuat definisi yang tidak ada. Jika lema tidak ditemukan, katakan demikian. Tampilkan homonim terpisah. Pisahkan penjelasan tambahan model dari definisi sumber.
+```
+
 
 
